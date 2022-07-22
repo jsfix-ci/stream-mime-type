@@ -68,7 +68,7 @@ async function getMimeTypeOfBuffer(
 )
 : Promise< string | undefined >
 {
-	const fileTypeData = await fileType.fromBuffer( data );
+	const fileTypeData = await fileType.fileTypeFromBuffer( data );
 
 	if ( fileTypeData )
 		return fileTypeData.mime;
